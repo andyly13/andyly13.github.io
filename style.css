@@ -1,0 +1,16 @@
+
+#profile-pic{
+    height: 300px;
+}
+
+.social-icon {
+    height: 50px;
+}
+
+body{
+    background-color: beige;
+}
+
+a{
+    color: black;
+}
