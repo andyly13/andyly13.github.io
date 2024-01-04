@@ -1,16 +1,16 @@
-
+h1 {
+    font-size: 5em;
+    font-weight: bold;
+}
 #profile-pic{
     height: 300px;
 }
 
-.social-icon {
-    height: 50px;
+.contact-icons img{
+    height: 30px;
 }
 
 body{
     background-color: beige;
 }
 
-a{
-    color: black;
-}
