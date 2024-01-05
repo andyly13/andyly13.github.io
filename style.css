@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', 'Proxima Nova';
     box-sizing: border-box;
 }
 
@@ -76,7 +76,7 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 
-.header-text h1 span{
+span{
     color: #89CFF0;
 }
 /*-------about-----------*/
@@ -106,4 +106,8 @@ nav ul li a:hover::after{
 .subtitle{
     font-size: 60px;
     font-weight: 600;
+}
+
+.about-column-2 p{
+    font-size: 20px;
 }
