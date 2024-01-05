@@ -46,13 +46,59 @@
                         I thrive in collaborative environments and find inspiration in being surrounded by individuals 
                         from whom I can learn. I believe in the power of building meaningful, enduring relationships 
                         and am always looking for opportunities to ask questions and learn something new!<br><br>
-                        In my free time, I enjoy playing basketball, learning interesting new recipes, and 
-                        procrastinating with a good self-help book...
-                    </p> 
+                        In my free time, I enjoy playing basketball, building legos (in a totally non-nerdy & cool way), and
+                        learning new recipes to cook for my loved ones!</p> 
+                   
+                        <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Technical</span><br>Python, Java, HTML/CSS, SQLite, Test-Driven-Development<br><br></li>
+                                <li><span>Behavioral</span><br>Leadership, Communication, Teamwork</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>June 2023 - Current</span><br>Instructor @ CodingMinds Academy<br><br></li>
+                                <li><span>October 2023 - Current</span><br>Mentee for Management Information Student Society<br><br></li>
+                                <li><span>December 2022 - April 2023</span><br>Intern @ Data@UCI<br><br></li>
+                                <li><span>June 2020 - May 2022</span><br>Jr. Shift Lead @ SomiSomi</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022</span><br>UC Irvine<br><br></li>
+                                <li><span>2018-2022</span><br>Lebanon Trail Highschool<br><br></li>
+                            </ul>
+                        </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+        
+    </script>
+
 
 </body>
 </html>

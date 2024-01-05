@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', 'Proxima Nova';
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
@@ -85,13 +85,11 @@ nav ul li a:hover::after{
 }
 
 
-span{
-    color: #89CFF0;
-}
+
 /*-------about-----------*/
 #about{
     padding: 80px 0;
-    color: white;
+    color: lightgray;
 }
 .row{
     display: flex;
@@ -115,8 +113,56 @@ span{
 .subtitle{
     font-size: 60px;
     font-weight: 600;
+    color: white;
 }
 
 .about-column-2 p{
     font-size: 20px;
+    font-weight: 75;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #3c95bd;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10 px 0;
+}
+
+.tab-contents ul li span{
+    color: #3c95bd;
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
 }
