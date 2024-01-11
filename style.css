@@ -166,3 +166,8 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+
+.sub-schools li{
+    margin-left: 20px;
+    list-style-type: circle;
+}
