@@ -13,8 +13,8 @@
             <nav>
                 <img src="images/chicken-w-clouds.png" alt="chicken-logo" class="logo">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#header" onclick="scrollToSection('#header')">Home</a></li>
+                    <li><a href="#about" onclick="scrollToSection('#about')">About</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -24,7 +24,7 @@
                 <h1>Welcome! I'm <span><a id="name" href="https://linktr.ee/andyly13" target="_blank">Andrew Ly</a></span><br>
                      and this is my personal website!
                 </h1>
-                <h6>(hover over my name to find my contact info!)</h6>
+                <h6><br>(hover over my name to find my contact info!)</h6>
             </div>
         </div>
     </div>
@@ -57,7 +57,7 @@
                         </div>
                         <div class="tab-contents active-tab" id="skills">
                             <ul>
-                                <li><span>Technical</span><br>Python, Java, HTML/CSS, SQLite, Test-Driven-Development<br><br></li>
+                                <li><span>Technical</span><br>Python, Java, Flutter, HTML/CSS, SQLite, Test-Driven-Development<br><br></li>
                                 <li><span>Behavioral</span><br>Leadership, Communication, Teamwork</li>
                             </ul>
                         </div>
@@ -103,6 +103,14 @@
 
         }
         
+        function scrollToSection(sectionId) {
+            var section = document.querySelector(sectionId);
+            if (section) {
+                document.documentElement.style.scrollBehavior = 'smooth'; // Add this line
+                section.scrollIntoView();
+                document.documentElement.style.scrollBehavior = 'auto'; // Add this line
+            }
+   }
     </script>
 
 
