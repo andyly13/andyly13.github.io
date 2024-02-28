@@ -97,17 +97,26 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
 }
 
-.about-column-1{
+.column-1{
     flex-basis: 35%;
 }
 
-.about-column-1 img{
+.column-1 img{
     width: 100%;
     border-radius: 15px;
 }
 
-.about-column-2{
+.column-1 p{
+    font-size: 20px;
+    font-weight: 60;
+}
+
+.column-2{
     flex-basis: 60%;
+}
+
+.double-spaced{
+    line-height: 1.5;
 }
 
 .subtitle{
@@ -116,7 +125,7 @@ nav ul li a:hover::after{
     color: white;
 }
 
-.about-column-2 p{
+.column-2 p{
     font-size: 20px;
     font-weight: 75;
 }
